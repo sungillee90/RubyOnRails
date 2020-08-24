@@ -23,3 +23,9 @@ Things you may want to cover:
 
 * ...
 # RubyOnRails
+
+# Calculator
+1. Controller
+2. Action
+3. routes.rb
+4. View
