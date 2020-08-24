@@ -3,5 +3,6 @@ class HomeController < ApplicationController
   end
 
   def hi
+    @message = "run away!"
   end
 end
