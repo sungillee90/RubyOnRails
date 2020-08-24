@@ -1,3 +1,6 @@
 <center style="color: dodgerblue">hi hi! </center>
-
-<p><%= @message %></p>
+<% if @show_message %>
+<p>
+  <%= @message %>
+</p>
+<% end %>
