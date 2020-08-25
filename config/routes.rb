@@ -8,6 +8,7 @@ Rails.application.routes.draw do
     # get 'plus/:num1/:num2' => 'calculator_home#plus'
   # for CRUD
   get '/index' => 'crud_home#index'
+  get '/write' => 'crud_home#write'
   # get 'articles/new'
   # get 'articles/create' Removed these get (mappings), since we already defined by calling resources method
   get 'welcome/index'
