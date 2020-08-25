@@ -16,8 +16,8 @@ class CrudHomeController < ApplicationController
     redirect_to '/index'
   end
 
-  def modify
-    # post = Post.find(params[:post_id])
+  def edit
+    @post = Post.find(params[:post_id])
     # post.title = params[:title]
     # post.description = params[:description]
     # post.save
@@ -25,9 +25,18 @@ class CrudHomeController < ApplicationController
     # redirect_to '/'
   end
 
-  def delete
-    post = Post.destroy(params[:id])
+  def update # similar to Create
+    post = Post.find(params[:post_id])
+    post.title = params[:title]
+    post.description = params[:description]
+    post.save
 
-    redirect_to :back
+    redirect_to '/index'
+  end
+
+  def delete
+    Post.destroy(params[:post_id])
+
+    redirect_to '/index'
   end
 end

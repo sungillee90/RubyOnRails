@@ -3,8 +3,8 @@ CRUD Read Page
 
 <% @posts.each do |post| %>
   <hr>
-  제목: <%=post.title %> <br>
-  내용: <%=post.description %> <hr>
+  제목: <%=post.title %> <a href="/edit/<%=post.id%>">edit</a>  <br>
+  내용: <%=post.description %> <a href="/delete/<%=post.id%>">delete</a> <hr>
 <% end %>
 <br>
 <a href="/write">Lets go write something</a>

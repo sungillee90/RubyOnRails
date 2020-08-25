@@ -12,8 +12,9 @@ Rails.application.routes.draw do
   get '/index' => 'crud_home#index'
   get '/write' => 'crud_home#write'
   post '/create' => 'crud_home#create'
-  get '/modify' => 'crud_home#modify'
-
+  get '/edit/:post_id' => 'crud_home#edit'
+  post '/update/:post_id' => 'crud_home#update'
+  get '/delete/:post_id' => 'crud_home#delete'
 
   # get 'articles/new'
   # get 'articles/create' Removed these get (mappings), since we already defined by calling resources method
