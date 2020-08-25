@@ -6,4 +6,8 @@ class CrudHomeController < ApplicationController
   def write
 
   end
+
+  def create
+
+  end
 end
