@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :crudposts
   # # 주소로 처음 들어가면, HomeControlelr에서 index 액션에 연결해주세요
     # get '/' => 'home#index'
     # get '/home' => 'home#hi'

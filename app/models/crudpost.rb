@@ -1,0 +1,2 @@
+class Crudpost < ApplicationRecord
+end

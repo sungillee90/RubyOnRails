@@ -1,0 +1,27 @@
+<%= form_with(model: crudpost, local: true) do |form| %>
+  <% if crudpost.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(crudpost.errors.count, "error") %> prohibited this crudpost from being saved:</h2>
+
+      <ul>
+        <% crudpost.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

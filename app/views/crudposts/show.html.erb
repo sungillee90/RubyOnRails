@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @crudpost.description %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @crudpost.title %>
+</p>
+
+<%= link_to 'Edit', edit_crudpost_path(@crudpost) %> |
+<%= link_to 'Back', crudposts_path %>
