@@ -28,10 +28,10 @@
 # end
 
 # 0 - 100 even numbers only
-num = 0
-while num <= 100
-  if num%2 == 0
-    puts num
-  end
-  num = num + 1
-end
+# num = 0
+# while num <= 100
+#   if num%2 == 0
+#     puts num
+#   end
+#   num = num + 1
+# end
