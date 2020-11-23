@@ -35,3 +35,6 @@
 #   end
 #   num = num + 1
 # end
+
+# Object Method Parameters
+# return a.range?(b, c)
